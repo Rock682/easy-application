@@ -1,0 +1,475 @@
+/* Sections */
+section {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 12px;
+    /* Softer rounded corners */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
+}
+
+/* Articles inside sections (if any) */
+article {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+}
+
+/* Filter Controls */
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.25rem;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 99px;
+    color: #4b5563;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.filter-btn:hover {
+    background-color: #f3f4f6;
+    border-color: #d1d5db;
+}
+
+/* Hide actual radio inputs */
+input[name="exam-filter"] {
+    display: none;
+}
+
+/* Active State Styling */
+#filter-all:checked~.filter-controls label[for="filter-all"],
+#filter-eng:checked~.filter-controls label[for="filter-eng"],
+#filter-law:checked~.filter-controls label[for="filter-law"],
+#filter-teach:checked~.filter-controls label[for="filter-teach"] {
+    background-color: #166534;
+    /* Match header green */
+    color: white;
+    border-color: #166534;
+    box-shadow: 0 4px 6px -1px rgba(22, 101, 52, 0.2);
+}
+
+/* Filtering Logic */
+#filter-eng:checked~.card-grid .card:not(.cat-eng),
+#filter-law:checked~.card-grid .card:not(.cat-law),
+#filter-teach:checked~.card-grid .card:not(.cat-teach) {
+    display: none;
+}
+
+/* Card Grid Layout */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    min-height: 200px;
+    /* Prevent collapse when empty */
+}
+
+/* Individual Card Style */
+.card {
+    background: linear-gradient(145deg, #ffffff 0%, #f0f7ff 100%);
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.25rem;
+    /* Reduced from 1.5rem */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 180px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Reduced movement */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: #60a5fa;
+}
+
+/* Card Icons */
+.card-icon {
+    display: none;
+}
+
+.card-icon svg {
+    width: 24px;
+    /* Reduced from 28px */
+    height: 24px;
+    /* Reduced from 28px */
+}
+
+/* Icon Colors */
+.blue-icon {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.green-icon {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.purple-icon {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.orange-icon {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+.indigo-icon {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+
+.pink-icon {
+    background: linear-gradient(135deg, #ec4899, #db2777);
+}
+
+.red-icon {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.teal-icon {
+    background: linear-gradient(135deg, #14b8a6, #0d9488);
+}
+
+
+/* Add a subtle top accent to cards */
+.card::before {
+    display: none;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #0f172a 0%, #00796B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.75rem;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover h3 {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #00796B 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Make the title link cover the entire card */
+.card h3 a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.card p {
+    font-size: 0.9rem;
+    /* Reduced from 0.95rem */
+    color: #6b7280;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.feature-item {
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    transition: background-color 0.2s;
+}
+
+.feature-item:hover {
+    background-color: #fdf2f8;
+    /* Subtle highlight color */
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+    font-size: 1.1rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 0;
+}
+
+/* Lists */
+ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+li strong {
+    color: #111827;
+}
+
+/* Disclaimer specific style */
+section:last-of-type {
+    background-color: #fffbeb;
+    /* Amber-50 */
+    border: 1px solid #fcd34d;
+    /* Amber-300 */
+}
+
+section:last-of-type h2 {
+    border-bottom-color: #f59e0b;
+    /* Amber-500 */
+    color: #92400e;
+    /* Amber-800 */
+}
+
+/* Status Badges */
+.status-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.status-open {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+/* Green */
+.status-upcoming {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+/* Yellow */
+.status-closed {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Red */
+
+/* Share Button */
+.share-btn {
+    margin-top: 1rem;
+    /* Push to bottom */
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #25D366;
+    /* WhatsApp Green */
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    /* Needed for z-index */
+    z-index: 2;
+    /* Sit above the card link */
+}
+
+.share-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.share-btn:hover {
+    color: #128c7e;
+    text-decoration: none;
+}
+
+/* FAQ Accordion */
+.faq-details {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.faq-summary {
+    padding: 1.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #1f2937;
+    list-style: none;
+    /* Hide default marker */
+    position: relative;
+    padding-right: 3rem;
+    /* Space for icon */
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+
+/* Custom marker */
+.faq-summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-summary::after {
+    content: '+';
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #3b82f6;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.faq-details[open] .faq-summary::after {
+    content: '-';
+    transform: translateY(-55%);
+    /* Visual centering adjustment */
+}
+
+.faq-details[open] .faq-summary {
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-answer {
+    padding: 1.25rem;
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* =========================================
+   New Features CSS (TOC, Timeline, etc.)
+   ========================================= */
+
+/* Sticky Header Active State */
+#sticky-header {
+    transform: translateY(0);
+}
+
+#sticky-header.-translate-y-full {
+    transform: translateY(-100%);
+}
+
+/* TOC Sidebar Visibility */
+#toc-sidebar[data-visible="true"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#toc-sidebar[data-visible="false"] {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Active TOC Link Style (Optional JS can add this class) */
+.toc-link.active {
+    color: #2563eb;
+    /* blue-600 */
+    background-color: #eff6ff;
+    /* blue-50 */
+    font-weight: 600;
+}
+
+/* Timeline Styles */
+.ring-4 {
+    box-shadow: 0 0 0 4px var(--tw-ring-color);
+}
+
+.ring-blue-50 {
+    --tw-ring-color: #eff6ff;
+}
+
+.ring-gray-50 {
+    --tw-ring-color: #f9fafb;
+}
+
+/* Countdown Timer */
+#countdown-display div {
+    min-width: 60px;
+}
+
+/* Animations */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-in-up {
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+/* Accent Colors helper */
+.bg-primary-blue {
+    background-color: #2563eb;
+}
+
+.text-primary-blue {
+    color: #2563eb;
+}
+
+.border-primary-blue\/20 {
+    border-color: rgb(37 99 235 / 0.2);
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APSET 2026: Notification, Eligibility & Exam Date (Official)</title>
+    <meta name="description"
+        content="APSET 2026 Notification: Check exam dates (March 28-29), application form, eligibility for Assistant Professors/Lecturers in Andhra Pradesh. Conducted by Andhra University.">
+    <meta name="keywords"
+        content="APSET 2026, Andhra Pradesh State Eligibility Test, APSET exam dates, APSET notification, APSET application form, APSET eligibility, Andhra University APSET, Assistant Professor jobs AP">
+    <link rel="canonical" href="https://easy-application.com/apset-2026.html">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://easy-application.com/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "APSET 2026",
+        "item": "https://easy-application.com/apset-2026.html"
+      }]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                        body: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        'primary-bg': '#F8F9FA', // Off-white background
+                        'secondary-bg': '#E9ECEF', // Soft grey for subtle distinction
+                        'text-dark': '#212529', // Charcoal for main text
+                        'text-light': '#495057', // Darker grey for secondary text
+                        'accent-teal': '#00796B', // Deep, elegant teal
+                        'accent-teal-hover': '#004D40', // Darker teal for hover
+                        'border-light': '#DEE2E6', // Light border for tables
+                        'primary-blue': '#007BFF', // Consistent blue accent
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'slide-in-up': 'slideInUp 0.6s ease-out forwards',
+                        'underline-grow': 'underlineGrow 0.3s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        },
+                        slideInUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: 0 },
+                            '100%': { transform: 'translateY(0)', opacity: 1 },
+                        },
+                        underlineGrow: {
+                            '0%': { transform: 'scaleX(0)' },
+                            '100%': { transform: 'scaleX(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for accenting links */
+        .accent-link {
+            position: relative;
+            color: theme('colors.accent-teal');
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .accent-link:hover {
+            color: theme('colors.accent-teal-hover');
+        }
+
+        .accent-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: theme('colors.accent-teal');
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .accent-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Basic table styling for scrollability */
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            /* for smooth scrolling on iOS */
+        }
+    </style>
+</head>
+
+<body class="font-body text-text-dark bg-primary-bg antialiased leading-relaxed tracking-wide">
+    <!-- Sticky Header for Reading Progress & Navigation -->
+    <div id="sticky-header"
+        class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50 transform -translate-y-full transition-transform duration-300 lg:hidden">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="font-bold text-primary-blue truncate">APSET 2026</span>
+            <div class="flex items-center gap-4">
+                <a href="#dates"
+                    class="text-xs font-semibold bg-primary-blue text-white px-3 py-1.5 rounded-full">Dates</a>
+                <a href="https://wa.me/?text=Check%20out%20APSET%202026%20Notification%20and%20Exam%20Details:%20https://easy-application.com/apset-2026.html"
+                    target="_blank" class="text-green-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.063 2.875 1.211 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.408 0 12.044c0 2.123.555 4.197 1.608 6.037L0 24l6.105-1.602a11.834 11.834 0 005.937 1.598h.005c6.637 0 12.048-5.408 12.052-12.044a11.875 11.875 0 00-3.539-8.498z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="min-h-screen flex flex-col items-center">
+        <!-- Floating Table of Contents Sidebar (Desktop) -->
+        <aside id="toc-sidebar"
+            class="hidden lg:block fixed left-8 top-1/2 -translate-y-1/2 w-64 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 z-40 transition-opacity duration-300"
+            data-visible="false">
+            <h3 class="font-display font-bold text-gray-900 mb-4 flex items-center gap-2 whitespace-nowrap">
+                <span class="material-icons-round text-accent-teal text-xl flex-shrink-0">format_list_bulleted</span>
+                Quick Navigation
+            </h3>
+            <nav class="space-y-1">
+                <a href="#highlights"
+                    class="toc-link block px-3 py-2 text-sm text-gray-600 hover:text-accent-teal hover:bg-teal-50 rounded-lg transition-colors">Exam
+                    Highlights</a>
+                <a href="#dates"
+                    class="toc-link block px-3 py-2 text-sm text-gray-600 hover:text-accent-teal hover:bg-teal-50 rounded-lg transition-colors">Important
+                    Dates</a>
+                <a href="#centers"
+                    class="toc-link block px-3 py-2 text-sm text-gray-600 hover:text-accent-teal hover:bg-teal-50 rounded-lg transition-colors">Regional
+                    Centers</a>
+                <a href="#application"
+                    class="toc-link block px-3 py-2 text-sm text-gray-600 hover:text-accent-teal hover:bg-teal-50 rounded-lg transition-colors">How
+                    to Apply</a>
+                <a href="#eligibility"
+                    class="toc-link block px-3 py-2 text-sm text-gray-600 hover:text-accent-teal hover:bg-teal-50 rounded-lg transition-colors">Eligibility
+                    Criteria</a>
+                <a href="#subjects"
+                    class="toc-link block px-3 py-2 text-sm text-gray-600 hover:text-accent-teal hover:bg-teal-50 rounded-lg transition-colors">Subjects
+                    & Codes</a>
+                <a href="#pattern"
+                    class="toc-link block px-3 py-2 text-sm text-gray-600 hover:text-accent-teal hover:bg-teal-50 rounded-lg transition-colors">Exam
+                    Pattern</a>
+                <a href="#faq"
+                    class="toc-link block px-3 py-2 text-sm text-gray-600 hover:text-accent-teal hover:bg-teal-50 rounded-lg transition-colors">FAQs</a>
+            </nav>
+        </aside>
+
+        <header class="w-full relative max-w-5xl lg:max-w-6xl overflow-hidden rounded-b-lg shadow-xl animate-fade-in">
+            <img src="apset-2026-hero.png"
+                alt="APSET 2026 Examination - Andhra Pradesh State Eligibility Test for Assistant Professors"
+                class="w-full h-64 sm:h-80 lg:h-96 object-cover object-center" />v1etPWzjOwbcxnYtA5L9gen4bYn7idfLCXVRekcK92au4e992TvoIXTl8PBTHBK36Ho4W/16pqCWQvZOr1y99/ag/YDj6ez7cPi1780mF5PZ+n1+PtA3TWTzzfj9czhit7OcYvB9munruSOb7ICZ3PGEx9QdbjfL4c18vlOM7HVRd8veoyXpfXywZO3z5Ox/V2+zgO2cb36fH3f/zH//wf/+P7//vP1/PxeDwcgR6Xsx/
