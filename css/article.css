@@ -182,15 +182,13 @@ input[name="exam-filter"] {
     -webkit-text-fill-color: transparent;
 }
 
-/* Make the title link cover the entire card */
-.card h3 a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
+/* Ensure card link doesn't have default underline */
+.card {
+    text-decoration: none !important;
+}
+
+.card:hover {
+    text-decoration: none;
 }
 
 .card p {
