@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://easyapplications.com/sitemap.xml
+Sitemap: https://easyapplications.in/sitemap.xml

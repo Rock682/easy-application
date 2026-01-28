@@ -1,10 +1,9 @@
 /* Sections */
 section {
     background-color: #ffffff;
-    padding: 2.5rem;
-    margin-bottom: 2.5rem;
+    padding: clamp(1.25rem, 5vw, 2.5rem);
+    margin-bottom: 2rem;
     border-radius: 12px;
-    /* Softer rounded corners */
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     border: 1px solid #f3f4f6;
 }
@@ -73,10 +72,9 @@ input[name="exam-filter"] {
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+    gap: clamp(1rem, 3vw, 1.5rem);
     margin-top: 1rem;
     min-height: 200px;
-    /* Prevent collapse when empty */
 }
 
 /* Individual Card Style */
