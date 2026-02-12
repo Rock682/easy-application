@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Easy Applications</title>
+    <meta name="description"
+        content="The page you are looking for does not exist. Check the latest AP CET notifications on Easy Applications.">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        'accent-teal': '#00796B',
+                        'primary-blue': '#007BFF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 flex items-center justify-center min-h-screen font-display">
+    <div class="text-center px-4">
+        <h1 class="text-9xl font-bold text-accent-teal mb-4">404</h1>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Page Not Found</h2>
+        <p class="text-gray-600 mb-8 text-lg max-w-md mx-auto">
+            Oops! The page you are looking for might have been removed or is temporarily unavailable.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/"
+                class="bg-accent-teal text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-teal-700 transition-all">
+                Go to Homepage
+            </a>
+            <a href="/ap-eapcet-2026/"
+                class="bg-white text-accent-teal border-2 border-accent-teal px-8 py-3 rounded-full font-bold shadow-sm hover:bg-teal-50 transition-all">
+                Check AP EAPCET
+            </a>
+        </div>
+        <div class="mt-12 text-sm text-gray-500">
+            &copy; 2026 Easy Applications
+        </div>
+    </div>
+</body>
+
+</html>
