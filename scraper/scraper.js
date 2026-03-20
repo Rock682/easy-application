@@ -9,36 +9,25 @@ const fs = require('fs');
     waitUntil: 'networkidle'
   });
 
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(4000);
 
   const data = await page.evaluate(() => {
     let items = [];
 
-    // 🔥 Target only visible notification sections
-    const sections = document.querySelectorAll('ul, table');
+    // 🔥 Target LEFT SIDE panel (real notifications)
+    const links = document.querySelectorAll('.panel-body a');
 
-    sections.forEach(section => {
-      section.querySelectorAll('a').forEach(el => {
-        const text = el.innerText.trim();
+    links.forEach(el => {
+      const text = el.innerText.trim();
 
-        if (
-          text.length > 10 &&
-          (
-            text.includes('Notification') ||
-            text.includes('Application') ||
-            text.includes('Exam') ||
-            text.includes('Result') ||
-            text.includes('Hall Ticket')
-          )
-        ) {
-          items.push({
-            exam: "AP EAPCET",
-            title: text,
-            link: el.href,
-            date: new Date().toISOString().split('T')[0]
-          });
-        }
-      });
+      if (text.length > 5) {
+        items.push({
+          exam: "AP EAPCET",
+          title: text,
+          link: el.href,
+          date: new Date().toISOString().split('T')[0]
+        });
+      }
     });
 
     return items;
