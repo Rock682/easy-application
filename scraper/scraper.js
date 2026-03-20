@@ -6,34 +6,42 @@ const fs = require('fs');
   const page = await browser.newPage();
 
   await page.goto('https://cets.apsche.ap.gov.in/EAPCET/', {
-    waitUntil: 'networkidle'
+    waitUntil: 'domcontentloaded'
   });
 
-  await page.waitForTimeout(4000);
+  // wait for links to actually appear
+  await page.waitForSelector('a', { timeout: 10000 });
 
-  const data = await page.evaluate(() => {
-    let items = [];
+  const links = await page.locator('a').all();
 
-    // 🔥 Target LEFT SIDE panel (real notifications)
-    const links = document.querySelectorAll('.panel-body a');
+  let items = [];
 
-    links.forEach(el => {
-      const text = el.innerText.trim();
+  for (const link of links) {
+    const text = (await link.innerText()).trim();
+    const href = await link.getAttribute('href');
 
-      if (text.length > 5) {
-        items.push({
-          exam: "AP EAPCET",
-          title: text,
-          link: el.href,
-          date: new Date().toISOString().split('T')[0]
-        });
-      }
-    });
-
-    return items;
-  });
+    if (
+      text.length > 10 &&
+      (
+        text.toLowerCase().includes('notification') ||
+        text.toLowerCase().includes('application') ||
+        text.toLowerCase().includes('schedule') ||
+        text.toLowerCase().includes('exam') ||
+        text.toLowerCase().includes('result')
+      ) &&
+      !text.toLowerCase().includes('step') &&
+      !text.toLowerCase().includes('login')
+    ) {
+      items.push({
+        exam: "AP EAPCET",
+        title: text,
+        link: href,
+        date: new Date().toISOString().split('T')[0]
+      });
+    }
+  }
 
   await browser.close();
 
-  fs.writeFileSync('data/exams.json', JSON.stringify(data, null, 2));
+  fs.writeFileSync('data/exams.json', JSON.stringify(items, null, 2));
 })();
