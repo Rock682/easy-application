@@ -6,22 +6,45 @@ const fs = require('fs');
   const page = await browser.newPage();
 
   await page.goto('https://cets.apsche.ap.gov.in/EAPCET/', {
-    waitUntil: 'networkidle' // 🔥 FIXED HERE
+    waitUntil: 'networkidle'
   });
 
-  // Extra wait for safety
+  // wait extra for safety
   await page.waitForTimeout(3000);
 
   const data = await page.evaluate(() => {
     let items = [];
 
-    document.querySelectorAll('a').forEach(el => {
-      const text = el.innerText;
+    const validKeywords = [
+      'notification',
+      'application',
+      'schedule',
+      'exam',
+      'result',
+      'hall ticket',
+      'last date',
+      'rank card'
+    ];
 
-      if (text && (text.includes('Notification') || text.includes('Application'))) {
+    const invalidKeywords = [
+      'step',
+      'login',
+      'status',
+      'print',
+      'payment'
+    ];
+
+    document.querySelectorAll('a').forEach(el => {
+      const text = el.innerText.trim().toLowerCase();
+
+      if (
+        text.length > 15 &&
+        validKeywords.some(k => text.includes(k)) &&
+        !invalidKeywords.some(k => text.includes(k))
+      ) {
         items.push({
           exam: "AP EAPCET",
-          title: text.trim(),
+          title: el.innerText.trim(),
           link: el.href,
           date: new Date().toISOString().split('T')[0]
         });
