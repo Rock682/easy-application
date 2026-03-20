@@ -6,8 +6,11 @@ const fs = require('fs');
   const page = await browser.newPage();
 
   await page.goto('https://cets.apsche.ap.gov.in/EAPCET/', {
-    waitUntil: 'domcontentloaded'
+    waitUntil: 'networkidle' // 🔥 FIXED HERE
   });
+
+  // Extra wait for safety
+  await page.waitForTimeout(3000);
 
   const data = await page.evaluate(() => {
     let items = [];
@@ -15,7 +18,7 @@ const fs = require('fs');
     document.querySelectorAll('a').forEach(el => {
       const text = el.innerText;
 
-      if (text.includes('Notification') || text.includes('Application')) {
+      if (text && (text.includes('Notification') || text.includes('Application'))) {
         items.push({
           exam: "AP EAPCET",
           title: text.trim(),
