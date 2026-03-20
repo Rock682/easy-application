@@ -20,9 +20,7 @@ const fs = require('fs');
       'schedule',
       'exam',
       'result',
-      'hall ticket',
-      'last date',
-      'rank card'
+      'hall ticket'
     ];
 
     const invalidKeywords = [
@@ -30,26 +28,16 @@ const fs = require('fs');
       'login',
       'status',
       'print',
-      'payment',
-      'caste',
-      'reservation',
-      'scholarship'
-    ];
-
-    const examKeywords = [
-      'eapcet',
-      'eamcet',
-      'cet'
+      'payment'
     ];
 
     document.querySelectorAll('a').forEach(el => {
       const text = el.innerText.trim().toLowerCase();
 
       if (
-        text.length > 15 &&
+        text.length > 10 &&
         validKeywords.some(k => text.includes(k)) &&
-        !invalidKeywords.some(k => text.includes(k)) &&
-        examKeywords.some(k => text.includes(k))
+        !invalidKeywords.some(k => text.includes(k))
       ) {
         items.push({
           exam: "AP EAPCET",
