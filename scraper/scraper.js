@@ -9,7 +9,6 @@ const fs = require('fs');
     waitUntil: 'networkidle'
   });
 
-  // wait extra for safety
   await page.waitForTimeout(3000);
 
   const data = await page.evaluate(() => {
@@ -31,7 +30,16 @@ const fs = require('fs');
       'login',
       'status',
       'print',
-      'payment'
+      'payment',
+      'caste',
+      'reservation',
+      'scholarship'
+    ];
+
+    const examKeywords = [
+      'eapcet',
+      'eamcet',
+      'cet'
     ];
 
     document.querySelectorAll('a').forEach(el => {
@@ -40,7 +48,8 @@ const fs = require('fs');
       if (
         text.length > 15 &&
         validKeywords.some(k => text.includes(k)) &&
-        !invalidKeywords.some(k => text.includes(k))
+        !invalidKeywords.some(k => text.includes(k)) &&
+        examKeywords.some(k => text.includes(k))
       ) {
         items.push({
           exam: "AP EAPCET",
