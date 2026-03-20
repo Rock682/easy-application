@@ -1,0 +1,29 @@
+name: APSCHE Scraper
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm init -y
+      - run: npm install playwright
+
+      - run: node scraper/scraper.js
+
+      - run: |
+          git config --global user.name "bot"
+          git config --global user.email "bot@example.com"
+          git add data/exams.json
+          git commit -m "update data" || echo "no changes"
+          git push
