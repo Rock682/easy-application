@@ -354,22 +354,9 @@
                     class="font-display text-3xl sm:text-4xl font-bold mt-10 mb-6 text-accent-teal border-b-2 border-accent-teal/30 pb-3 animate-slide-in-up">
                     AP EAPCET 2026 Important Dates
                 </h2>
-                <ul class="list-disc list-inside space-y-2 mb-6 text-text-light">
-                    <li><strong class="text-text-dark">Official Notification:</strong> February 3, 2026</li>
-                    <li><strong class="text-text-dark">Online Application Starts:</strong> February 4, 2026</li>
-                    <li><strong class="text-text-dark">Last Date (Without Late Fee):</strong> March 17, 2026</li>
-                    <li><strong class="text-text-dark">Late Fee ₹1000 Last Date:</strong> March 21, 2026</li>
-                    <li><strong class="text-text-dark">Late Fee ₹2000 Last Date:</strong> March 25, 2026</li>
-                    <li><strong class="text-text-dark">Late Fee ₹4000 Last Date:</strong> March 30, 2026</li>
-                    <li><strong class="text-text-dark">Late Fee ₹10000 Last Date:</strong> April 3, 2026</li>
-                    <li><strong class="text-text-dark">Correction Window:</strong> April 4-6, 2026</li>
-                    <li><strong class="text-text-dark">Hall Ticket Download:</strong> April 28, 2026</li>
-                    <li><strong class="text-text-dark">Engineering Exam Dates:</strong> May 12-15 & May 18, 2026</li>
-                    <li><strong class="text-text-dark">Agriculture & Pharmacy Exam:</strong> May 19-20, 2026</li>
-                    <li><strong class="text-text-dark">Preliminary Key Release:</strong> May 23, 2026</li>
-                    <li><strong class="text-text-dark">Objection Deadline:</strong> May 25, 2026</li>
-                    <li><strong class="text-text-dark">Results (Tentative):</strong> June 1, 2026</li>
-                </ul>
+                <ul id="important-dates" class="list-disc list-inside space-y-2 mb-6 text-text-light">
+    <li>Loading latest official dates...</li>
+</ul>
                 <p class="mb-6 text-text-light">
                     Note: These dates are confirmed as per the official notification released on February 3, 2026.
                 </p>
@@ -752,6 +739,41 @@
             </a>
         </div>
     </section>
+    <script>
+fetch('https://raw.githubusercontent.com/Rock682/easy-application/main/data/exams.json')
+.then(res => res.json())
+.then(data => {
+
+    const container = document.getElementById('important-dates');
+
+    if (!container) return;
+
+    const dates = data.filter(item => 
+        item.exam === "AP EAPCET" && item.type === "important_date"
+    );
+
+    if (dates.length === 0) {
+        container.innerHTML = "<li>No latest updates available</li>";
+        return;
+    }
+
+    container.innerHTML = "";
+
+    dates.forEach(item => {
+        const li = document.createElement('li');
+
+        li.innerHTML = `
+            <strong class="text-text-dark">${item.title}:</strong> ${item.date}
+        `;
+
+        container.appendChild(li);
+    });
+
+})
+.catch(err => {
+    console.log("Error:", err);
+});
+</script>
 </body>
 
 </html>
