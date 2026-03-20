@@ -5,43 +5,87 @@ const fs = require('fs');
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  await page.goto('https://cets.apsche.ap.gov.in/EAPCET/', {
+  let results = [];
+
+  // =========================
+  // 🔹 IMPORTANT DATES PAGE
+  // =========================
+  await page.goto('https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates', {
     waitUntil: 'domcontentloaded'
   });
 
-  // wait for links to actually appear
-  await page.waitForSelector('a', { timeout: 10000 });
+  await page.waitForTimeout(3000);
 
-  const links = await page.locator('a').all();
+  const dates = await page.evaluate(() => {
+    let items = [];
 
-  let items = [];
+    // Target table rows (important dates are in table)
+    const rows = document.querySelectorAll('table tr');
 
-  for (const link of links) {
-    const text = (await link.innerText()).trim();
-    const href = await link.getAttribute('href');
+    rows.forEach(row => {
+      const cols = row.querySelectorAll('td');
 
-    if (
-      text.length > 10 &&
-      (
-        text.toLowerCase().includes('notification') ||
-        text.toLowerCase().includes('application') ||
-        text.toLowerCase().includes('schedule') ||
-        text.toLowerCase().includes('exam') ||
-        text.toLowerCase().includes('result')
-      ) &&
-      !text.toLowerCase().includes('step') &&
-      !text.toLowerCase().includes('login')
-    ) {
-      items.push({
-        exam: "AP EAPCET",
-        title: text,
-        link: href,
-        date: new Date().toISOString().split('T')[0]
-      });
-    }
-  }
+      if (cols.length >= 2) {
+        const title = cols[0].innerText.trim();
+        const date = cols[1].innerText.trim();
+
+        if (title && date) {
+          items.push({
+            exam: "AP EAPCET",
+            type: "important_date",
+            title: title,
+            date: date,
+            link: window.location.href
+          });
+        }
+      }
+    });
+
+    return items;
+  });
+
+  results.push(...dates);
+
+  // =========================
+  // 🔹 HOMEPAGE (optional updates)
+  // =========================
+  await page.goto('https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_HomePage', {
+    waitUntil: 'domcontentloaded'
+  });
+
+  await page.waitForTimeout(3000);
+
+  const updates = await page.evaluate(() => {
+    let items = [];
+
+    document.querySelectorAll('a').forEach(el => {
+      const text = el.innerText.trim();
+
+      if (
+        text.length > 10 &&
+        (
+          text.includes('Notification') ||
+          text.includes('Application') ||
+          text.includes('Result') ||
+          text.includes('Hall Ticket')
+        )
+      ) {
+        items.push({
+          exam: "AP EAPCET",
+          type: "update",
+          title: text,
+          link: el.href,
+          date: new Date().toISOString().split('T')[0]
+        });
+      }
+    });
+
+    return items;
+  });
+
+  results.push(...updates);
 
   await browser.close();
 
-  fs.writeFileSync('data/exams.json', JSON.stringify(items, null, 2));
+  fs.writeFileSync('data/exams.json', JSON.stringify(results, null, 2));
 })();
