@@ -1,8 +1,121 @@
 [
   {
     "exam": "AP EAPCET",
-    "title": "Scheduled Castes (Sub Classification) - G.O.MS.No.7 Dated:18-04-2025",
-    "link": "https://cets.apsche.ap.gov.in/apsche/PDF/2026_Subclassification_ScheduledCastes.pdf",
+    "type": "important_date",
+    "title": "1",
+    "date": "Notification of APEAPCET 2026",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "2",
+    "date": "Commencement of submission of Online Applications",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "3",
+    "date": "Last date for submission of Online Applications without Late Fee",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "4",
+    "date": "Last date for submission of Online Applications with Late Fee (Rs.1000/-)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "5",
+    "date": "Last date for submission of Online Applications with Late Fee (Rs.2000/-)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "6",
+    "date": "Last date for submission of Online Applications with Late Fee (Rs.4000/-)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "7",
+    "date": "Last date for submission of Online Applications with Late Fee (Rs.10000/-)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "8",
+    "date": "Correction of online application data already submitted by the candidate",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "9",
+    "date": "Downloading Hall-Tickets from the website/ through WhatsApp)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "10",
+    "date": "Dates of Examination (Engineering)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "11",
+    "date": "Dates of Examination (Agriculture & Pharmacy)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "12",
+    "date": "Release of Preliminary Key (Engineering, Agriculture & Pharmacy)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "13",
+    "date": "Last date for receiving Objections on Preliminary Key (Engineering, Agriculture & Pharmacy)*",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "14",
+    "date": "Release of results tentatively",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "update",
+    "title": "Step - 3\nFill Application\n(Only After Fee Payment)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_ApplicationForm.aspx",
+    "date": "2026-03-20"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "update",
+    "title": "Step - 4\nKnow Your Application Status",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_ApplicationStatus.aspx",
+    "date": "2026-03-20"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "update",
+    "title": "Step - 5\nPrint Application Form (Only After Submitting Application Form)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_GetPrintApplication.aspx",
     "date": "2026-03-20"
   }
 ]
