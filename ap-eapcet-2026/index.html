@@ -354,8 +354,8 @@
                     class="font-display text-3xl sm:text-4xl font-bold mt-10 mb-6 text-accent-teal border-b-2 border-accent-teal/30 pb-3 animate-slide-in-up">
                     AP EAPCET 2026 Important Dates
                 </h2>
-                <ul id="important-dates" class="list-disc list-inside space-y-2 mb-6 text-text-light">
-    <li>Loading latest official dates...</li>
+               <ul id="important-dates" class="list-disc list-inside space-y-2 mb-6 text-text-light">
+    <li>Loading latest data...</li>
 </ul>
                 <p class="mb-6 text-text-light">
                     Note: These dates are confirmed as per the official notification released on February 3, 2026.
@@ -740,38 +740,34 @@
         </div>
     </section>
     <script>
-fetch('https://raw.githubusercontent.com/Rock682/easy-application/main/data/exams.json')
-.then(res => res.json())
-.then(data => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    const container = document.getElementById('important-dates');
+    fetch('https://raw.githubusercontent.com/Rock682/easy-application/main/data/exams.json')
+    .then(res => res.json())
+    .then(data => {
 
-    if (!container) return;
+        const container = document.getElementById('important-dates');
+        if (!container) return;
 
-    const dates = data.filter(item => 
-        item.exam === "AP EAPCET" && item.type === "important_date"
-    );
+        const dates = data.filter(item => item.exam === "AP EAPCET");
 
-    if (dates.length === 0) {
-        container.innerHTML = "<li>No latest updates available</li>";
-        return;
-    }
+        container.innerHTML = "";
 
-    container.innerHTML = "";
+        dates.forEach(item => {
+            const li = document.createElement('li');
 
-    dates.forEach(item => {
-        const li = document.createElement('li');
+            li.innerHTML = `
+                <strong class="text-text-dark">${item.date}</strong>
+            `;
 
-        li.innerHTML = `
-            <strong class="text-text-dark">${item.title}:</strong> ${item.date}
-        `;
+            container.appendChild(li);
+        });
 
-        container.appendChild(li);
+    })
+    .catch(err => {
+        console.log("Error:", err);
     });
 
-})
-.catch(err => {
-    console.log("Error:", err);
 });
 </script>
 </body>
