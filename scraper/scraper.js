@@ -14,38 +14,31 @@ const fs = require('fs');
   const data = await page.evaluate(() => {
     let items = [];
 
-    const validKeywords = [
-      'notification',
-      'application',
-      'schedule',
-      'exam',
-      'result',
-      'hall ticket'
-    ];
+    // 🔥 Target only visible notification sections
+    const sections = document.querySelectorAll('ul, table');
 
-    const invalidKeywords = [
-      'step',
-      'login',
-      'status',
-      'print',
-      'payment'
-    ];
+    sections.forEach(section => {
+      section.querySelectorAll('a').forEach(el => {
+        const text = el.innerText.trim();
 
-    document.querySelectorAll('a').forEach(el => {
-      const text = el.innerText.trim().toLowerCase();
-
-      if (
-        text.length > 10 &&
-        validKeywords.some(k => text.includes(k)) &&
-        !invalidKeywords.some(k => text.includes(k))
-      ) {
-        items.push({
-          exam: "AP EAPCET",
-          title: el.innerText.trim(),
-          link: el.href,
-          date: new Date().toISOString().split('T')[0]
-        });
-      }
+        if (
+          text.length > 10 &&
+          (
+            text.includes('Notification') ||
+            text.includes('Application') ||
+            text.includes('Exam') ||
+            text.includes('Result') ||
+            text.includes('Hall Ticket')
+          )
+        ) {
+          items.push({
+            exam: "AP EAPCET",
+            title: text,
+            link: el.href,
+            date: new Date().toISOString().split('T')[0]
+          });
+        }
+      });
     });
 
     return items;
