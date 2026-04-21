@@ -742,14 +742,15 @@
     <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-    fetch('https://raw.githubusercontent.com/Rock682/easy-application/main/data/exams.json')
+    fetch('../data/exams.json')
     .then(res => res.json())
     .then(data => {
 
         const container = document.getElementById('important-dates');
         if (!container) return;
 
-        const dates = data.filter(item => item.exam === "AP EAPCET");
+        const exam = data.find(item => item.exam === "AP EAPCET");
+        const dates = exam ? exam.dates : [];
 
         container.innerHTML = "";
 
@@ -757,7 +758,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const li = document.createElement('li');
 
             li.innerHTML = `
-                <strong class="text-text-dark">${item.date}</strong>
+                <strong class="text-text-dark">${item.event}:</strong> ${item.date}
             `;
 
             container.appendChild(li);
