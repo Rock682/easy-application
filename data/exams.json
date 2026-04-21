@@ -158,15 +158,13 @@
   },
   {
     "exam": "AP POLYCET",
-    "source": "https://polycetap.ap.gov.in/",
+    "source": "https://polycetap.ap.gov.in/Default.aspx",
     "checked_on": "2026-04-21",
     "dates": [
-      { "event": "Notification Release", "date": "28-02-2026" },
       { "event": "Commencement of filing of online application", "date": "03-03-2026" },
       { "event": "Last date for filing of online application", "date": "09-04-2026" },
-      { "event": "Hall Ticket Download", "date": "18-04-2026" },
-      { "event": "Date and Time of Entrance Examination", "date": "25-04-2026, 11:00 AM to 1:00 PM" },
-      { "event": "Results Release", "date": "10-05-2026" }
+      { "event": "Hall Ticket Download", "date": "Available before one week of date of examination" },
+      { "event": "Date and Time of Entrance Examination", "date": "25-04-2026, 11:00 AM to 1:00 PM" }
     ]
   },
   {
