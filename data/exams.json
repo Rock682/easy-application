@@ -1,184 +1,114 @@
 [
   {
     "exam": "AP EAPCET",
-    "source": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates.aspx",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Notification of APEAPCET 2026", "date": "03-02-2026 (Tuesday)" },
-      { "event": "Commencement of submission of Online Applications", "date": "04-02-2026 (Wednesday)" },
-      { "event": "Last date for submission of Online Applications without Late Fee", "date": "24-03-2026 (Tuesday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs.1000/-)", "date": "28-03-2026 (Saturday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs.2000/-)", "date": "01-04-2026 (Wednesday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs.4000/-)", "date": "06-04-2026 (Monday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs.10000/-)", "date": "10-04-2026 (Friday)" },
-      { "event": "Correction of online application data already submitted by the candidate", "date": "11-04-2026 (Saturday) to 13-04-2026 (Monday)" },
-      { "event": "Downloading Hall-Tickets from the website / through WhatsApp", "date": "28-04-2026 (Tuesday)" },
-      { "event": "Dates of Examination (Engineering)", "date": "12-05-2026 (Tuesday) to 15-05-2026 (Friday) and 18-05-2026 (Monday)" },
-      { "event": "Dates of Examination (Agriculture & Pharmacy)", "date": "19-05-2026 (Tuesday) to 20-05-2026 (Wednesday)" },
-      { "event": "Release of Preliminary Key (Engineering, Agriculture & Pharmacy)", "date": "23-05-2026 (Saturday)" },
-      { "event": "Last date for receiving Objections on Preliminary Key", "date": "25-05-2026 (Monday)" },
-      { "event": "Release of results tentatively", "date": "01-06-2026 (Monday)" }
-    ]
+    "type": "important_date",
+    "title": "1",
+    "date": "Notification of APEAPCET 2026",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "AP ECET",
-    "source": "https://cets.apsche.ap.gov.in/ECET/UI/ImportantDates.aspx",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Date of Notification in the News Papers", "date": "04.02.2026 (Wednesday)" },
-      { "event": "Commencement of submission of online Applications", "date": "04.02.2026 (Wednesday)" },
-      { "event": "Last date for submission of online Applications without late fee", "date": "12.03.2026 (Thursday)" },
-      { "event": "Last date for submission of online Applications with late fee (Rs.1000/-)", "date": "16.03.2026 (Monday)" },
-      { "event": "Last date for submission of online Applications with late fee (Rs.2000/-)", "date": "20.03.2026 (Friday)" },
-      { "event": "Last date for submission of online Applications with late fee (Rs.4000/-)", "date": "24.03.2026 (Tuesday)" },
-      { "event": "Last date for submission of online Applications with late fee (Rs.10000/-)", "date": "28.03.2026 (Saturday)" },
-      { "event": "Correction of online application data already submitted by the candidate", "date": "29.03.2026 (Sunday)" },
-      { "event": "Downloading Hall Tickets from website", "date": "09.04.2026 (Thursday)" },
-      { "event": "Date of Examination", "date": "23.04.2026 (Thursday)" },
-      { "event": "Release of Preliminary Key", "date": "27.04.2026 at 05:00 PM (Monday)" },
-      { "event": "Last date for receiving Objections on Preliminary Key", "date": "29.04.2026 at 05:00 PM (Wednesday)" },
-      { "event": "Result Release", "date": "07.05.2026 (Thursday)" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "2",
+    "date": "Commencement of submission of Online Applications",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "AP EdCET",
-    "source": "https://cets.apsche.ap.gov.in/EDCET/EDCETHomePages/ImportantDates",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Date of Issue of Notification APEdCET-2026", "date": "03-02-2026 (Tuesday)" },
-      { "event": "Date of Commencement of Submission of Online Applications", "date": "11-02-2026 (Wednesday)" },
-      { "event": "Last Date for Submission of Online Applications Without Late Fee", "date": "26-03-2026 (Thursday)" },
-      { "event": "Last Date for Submission of Online Applications With a Late Fee of Rs.1000/-", "date": "29-03-2026 (Sunday)" },
-      { "event": "Last Date for Submission of Online Applications With a Late fee of Rs.2,000/-", "date": "01-04-2026 (Wednesday)" },
-      { "event": "Last Date for Submission of Online Applications With a Late Fee of Rs.4,000/-", "date": "04-04-2026 (Saturday)" },
-      { "event": "Last Date for Submission of Online Applications With a Late Fee of Rs.10,000/-", "date": "07-04-2026 (Tuesday)" },
-      { "event": "Corrections of Online Application already Submitted by Candidates", "date": "08-04-2026 (Wednesday)" },
-      { "event": "Download of Hall Tickets", "date": "20-04-2026 (Monday)" },
-      { "event": "Date & Time of APEdCET-2026", "date": "08-05-2026, Shift I 9:00 AM to 11:00 AM; Shift II 12:30 PM to 2:30 PM (Friday)" },
-      { "event": "Release of Preliminary Key", "date": "12-05-2026 (Tuesday)" },
-      { "event": "Last Date for receiving Objections on Preliminary Key", "date": "14-05-2026 (Thursday)" },
-      { "event": "Declaration of Results and Ranks", "date": "26-05-2026 (Tuesday)" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "3",
+    "date": "Last date for submission of Online Applications without Late Fee",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "AP ICET",
-    "source": "https://cets.apsche.ap.gov.in/ICET/ICETHomePages/ImportantDates",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Date of Notification in the News Papers", "date": "04-02-2026" },
-      { "event": "Commencement of submission of Online applications", "date": "05-02-2026" },
-      { "event": "Registration & submission of online application without late fee", "date": "05-02-2026 to 23-03-2026" },
-      { "event": "Submission of online applications with late fee of Rs. 1000/- + Registration fee", "date": "24-03-2026 to 26-03-2026" },
-      { "event": "Submission of online applications with late fee of Rs. 2000/- + Registration fee", "date": "27-03-2026 to 29-03-2026" },
-      { "event": "Submission of online applications with late fee of Rs. 4000/- + Registration fee", "date": "30-03-2026 to 01-04-2026" },
-      { "event": "Submission of online applications with late fee of Rs. 10000/- + Registration fee", "date": "02-04-2026 to 05-04-2026" },
-      { "event": "Corrections to be made, if any, to submitted applications", "date": "06-04-2026" },
-      { "event": "Downloading of Hall-tickets from the website", "date": "15-04-2026 onwards" },
-      { "event": "Examination date", "date": "02-05-2026" },
-      { "event": "Examination timings", "date": "09:00 AM to 11:30 AM and 02:00 PM to 04:30 PM" },
-      { "event": "Release of Preliminary Key", "date": "05-05-2026 - 05:00 PM" },
-      { "event": "Last Date for receiving of objections on Preliminary Key", "date": "07-05-2026 - 05:00 PM" },
-      { "event": "Declaration of Results & Ranks", "date": "16-05-2026" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "4",
+    "date": "Last date for submission of Online Applications with Late Fee (Rs.1000/-)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "AP LAWCET",
-    "source": "https://cets.apsche.ap.gov.in/LAWCET/LAWCETHomePages/ImportantDates",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Date of Notification in the News papers", "date": "04-02-2026 (Wednesday)" },
-      { "event": "Commencement of submission of Online Applications", "date": "12-02-2026 (Thursday)" },
-      { "event": "Last date for submission of Online Applications without Late Fee", "date": "20-03-2026 (Friday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs. 1000)", "date": "28-03-2026 (Saturday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs. 2000)", "date": "31-03-2026 (Tuesday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs. 4000)", "date": "03-04-2026 (Friday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs. 10000)", "date": "06-04-2026 (Monday)" },
-      { "event": "Correction of online application data already submitted by the candidate", "date": "08-04-2026 (Wednesday)" },
-      { "event": "Downloading Hall-Tickets", "date": "20-04-2026 (Monday)" },
-      { "event": "Date of Examination", "date": "04-05-2026 (Monday), Session 1: 09:00 AM - 10:30 AM; Session 2: 02:00 PM - 03:30 PM" },
-      { "event": "Release of Preliminary Key", "date": "07-05-2026 (Thursday)" },
-      { "event": "Last date for receiving Objections on Preliminary Key", "date": "09-05-2026 (Saturday)" },
-      { "event": "Results Release", "date": "18-05-2026 (Monday)" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "5",
+    "date": "Last date for submission of Online Applications with Late Fee (Rs.2000/-)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "AP PECET",
-    "source": "https://cets.apsche.ap.gov.in/PECET/PECETHomePages/ImportantDates",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Commencement of submitting Online application forms", "date": "13.02.2026" },
-      { "event": "Last date for submitting online applications without late fee", "date": "30.04.2026" },
-      { "event": "Last date for submitting online applications with late fee of Rs.1000/-", "date": "15.05.2026" },
-      { "event": "Last date for submitting online applications with late fee of Rs.2000/-", "date": "25.05.2026" },
-      { "event": "Correction of online application data already submitted", "date": "24.05.2026 to 26.05.2026" },
-      { "event": "Downloading of Hall-tickets from the website / through WhatsApp", "date": "28.05.2026 onwards" },
-      { "event": "Dates & Time of Physical Efficiency and Skill Test in selected Game", "date": "03rd to 08th June, 2026 at 7:00 AM" },
-      { "event": "Reporting time of applicants for Physical Efficiency and Games Skill Test on allotted Test Date", "date": "6:00 AM" },
-      { "event": "Announcement of Results", "date": "One week after the last day of tests" },
-      { "event": "Test Centre", "date": "Acharya Nagarjuna University Campus, Nagarjuna Nagar" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "6",
+    "date": "Last date for submission of Online Applications with Late Fee (Rs.4000/-)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "AP PGCET",
-    "source": "https://cets.apsche.ap.gov.in/PGCET/PGCET_HomePages/ImportantDates",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Issue of Notification", "date": "07-02-2026" },
-      { "event": "Date of commencement of online registration & Submission of applications", "date": "09-02-2026" },
-      { "event": "Last date for submitting the online application(s) without late fee", "date": "28-03-2026" },
-      { "event": "Last date for submitting the online application(s) late fee of Rs.1000/-", "date": "31-03-2026" },
-      { "event": "Last date for submitting the online application(s) late fee of Rs.2,000/-", "date": "03-04-2026" },
-      { "event": "Last date for submitting the online application(s) late fee of Rs.4,000/-", "date": "06-04-2026" },
-      { "event": "Last date for submitting the online application(s) late fee of Rs.10,000/-", "date": "09-04-2026" },
-      { "event": "Correction of online application data already submitted by the candidate", "date": "10-04-2026" },
-      { "event": "Downloading of Hall Tickets from the website", "date": "20-04-2026" },
-      { "event": "Commencement of Entrance tests", "date": "08-05-2026 to 11-05-2026" },
-      { "event": "Examination Timings", "date": "09:00 AM to 10:30 AM; 12:30 PM to 02:00 PM; 04:00 PM to 05:30 PM" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "7",
+    "date": "Last date for submission of Online Applications with Late Fee (Rs.10000/-)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "AP PGECET",
-    "source": "https://cets.apsche.ap.gov.in/PGECET/UI/ImportantDates",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Date of Notification in the News papers", "date": "04-02-2026 (Wednesday)" },
-      { "event": "Commencement of submission of Online Applications", "date": "06-02-2026 (Friday)" },
-      { "event": "Last date for submission of Online Applications without Late Fee", "date": "20-03-2026 (Friday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs. 1000)", "date": "23-03-2026 (Monday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs. 2000)", "date": "26-03-2026 (Thursday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs. 4000)", "date": "28-03-2026 (Saturday)" },
-      { "event": "Last date for submission of Online Applications with Late Fee (Rs. 10000)", "date": "01-04-2026 (Wednesday)" },
-      { "event": "Correction of online application data already submitted by the candidate", "date": "03-04-2026 (Friday)" },
-      { "event": "Downloading Hall-Tickets", "date": "15-04-2026 (Wednesday)" },
-      { "event": "Date of Examination", "date": "28-04-2026 (Tuesday), 29-04-2026 (Wednesday) & 30-04-2026 (Thursday)" },
-      { "event": "Release of Preliminary Key", "date": "06-05-2026 (Wednesday)" },
-      { "event": "Last date for receiving Objections on Preliminary Key", "date": "08-05-2026 (Friday)" },
-      { "event": "Results Release", "date": "14-05-2026 (Thursday)" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "8",
+    "date": "Correction of online application data already submitted by the candidate",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "AP POLYCET",
-    "source": "https://polycetap.ap.gov.in/Default.aspx",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "Commencement of filing of online application", "date": "03-03-2026" },
-      { "event": "Last date for filing of online application", "date": "09-04-2026" },
-      { "event": "Hall Ticket Download", "date": "Available before one week of date of examination" },
-      { "event": "Date and Time of Entrance Examination", "date": "25-04-2026, 11:00 AM to 1:00 PM" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "9",
+    "date": "Downloading Hall-Tickets from the website/ through WhatsApp)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
   },
   {
-    "exam": "APSET",
-    "source": "https://apset.aptonline.in/UI/Dates.aspx",
-    "checked_on": "2026-04-21",
-    "dates": [
-      { "event": "APSET Notification", "date": "31st December 2025" },
-      { "event": "Commencement of Submission of Online Applications", "date": "9th January 2026" },
-      { "event": "Last date for Submission of Online Applications Without Late Fee (Only Registration Fee)", "date": "9th February 2026" },
-      { "event": "Last date with a Late fee of Rs.2,000 + Registration Fee", "date": "25th February 2026" },
-      { "event": "Last date with a Late fee of Rs.5,000 + Registration Fee", "date": "05th March 2026" },
-      { "event": "Downloading of Hall Ticket", "date": "19th March 2026" },
-      { "event": "Date of Examination", "date": "28th & 29th March 2026" }
-    ]
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "10",
+    "date": "Dates of Examination (Engineering)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "11",
+    "date": "Dates of Examination (Agriculture & Pharmacy)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "12",
+    "date": "Release of Preliminary Key (Engineering, Agriculture & Pharmacy)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "13",
+    "date": "Last date for receiving Objections on Preliminary Key (Engineering, Agriculture & Pharmacy)*",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "important_date",
+    "title": "14",
+    "date": "Release of results tentatively",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "update",
+    "title": "Know Your Application Status",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_ApplicationStatus.aspx",
+    "date": "2026-04-21"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "update",
+    "title": "Print Application Form (Only After Submitting Application Form)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_GetPrintApplication.aspx",
+    "date": "2026-04-21"
   }
 ]
