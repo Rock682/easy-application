@@ -102,20 +102,20 @@
     "type": "update",
     "title": "Download Hall Ticket",
     "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_GetPrintHallTicket.aspx",
-    "date": "2026-04-28"
+    "date": "2026-04-29"
   },
   {
     "exam": "AP EAPCET",
     "type": "update",
     "title": "Know Your Application Status",
     "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_ApplicationStatus.aspx",
-    "date": "2026-04-28"
+    "date": "2026-04-29"
   },
   {
     "exam": "AP EAPCET",
     "type": "update",
     "title": "Print Application Form (Only After Submitting Application Form)",
     "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_GetPrintApplication.aspx",
-    "date": "2026-04-28"
+    "date": "2026-04-29"
   }
 ]
