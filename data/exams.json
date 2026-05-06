@@ -100,6 +100,13 @@
   {
     "exam": "AP EAPCET",
     "type": "update",
+    "title": "Fill Application\n(Only After Fee Payment)",
+    "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_ApplicationForm.aspx",
+    "date": "2026-05-06"
+  },
+  {
+    "exam": "AP EAPCET",
+    "type": "update",
     "title": "Download Hall Ticket",
     "link": "https://cets.apsche.ap.gov.in/EAPCET/Eapcet/EAPCET_GetPrintHallTicket.aspx",
     "date": "2026-05-06"
