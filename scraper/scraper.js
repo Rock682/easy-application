@@ -5,38 +5,34 @@ const fs = require('fs');
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  let results = [];
+  const examData = {
+    exam: 'AP EAPCET',
+    dates: [],
+    updates: []
+  };
 
   // =========================
   // 🔹 IMPORTANT DATES PAGE
   // =========================
-  await page.goto('https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates', {
+  await page.goto('https://cets.apsche.ap.gov.in/EAPCET/EapcetHomepages/ImportantDates.aspx', {
     waitUntil: 'domcontentloaded'
   });
 
   await page.waitForTimeout(3000);
 
   const dates = await page.evaluate(() => {
-    let items = [];
-
-    // Target table rows (important dates are in table)
+    const items = [];
     const rows = document.querySelectorAll('table tr');
 
     rows.forEach(row => {
-      const cols = row.querySelectorAll('td');
+      const cols = Array.from(row.querySelectorAll('td')).map(col => col.innerText.trim()).filter(Boolean);
 
       if (cols.length >= 2) {
-        const title = cols[0].innerText.trim();
-        const date = cols[1].innerText.trim();
+        const [event, ...dateParts] = cols;
+        const date = dateParts.join(' ');
 
-        if (title && date) {
-          items.push({
-            exam: "AP EAPCET",
-            type: "important_date",
-            title: title,
-            date: date,
-            link: window.location.href
-          });
+        if (event && date && !/^s\.?no/i.test(event)) {
+          items.push({ event, date });
         }
       }
     });
@@ -44,7 +40,7 @@ const fs = require('fs');
     return items;
   });
 
-  results.push(...dates);
+  examData.dates = dates;
 
   // =========================
   // 🔹 HOMEPAGE (optional updates)
@@ -56,7 +52,7 @@ const fs = require('fs');
   await page.waitForTimeout(3000);
 
   const updates = await page.evaluate(() => {
-    let items = [];
+    const items = [];
 
     document.querySelectorAll('a').forEach(el => {
       const text = el.innerText.trim();
@@ -71,8 +67,6 @@ const fs = require('fs');
         )
       ) {
         items.push({
-          exam: "AP EAPCET",
-          type: "update",
           title: text,
           link: el.href,
           date: new Date().toISOString().split('T')[0]
@@ -83,9 +77,9 @@ const fs = require('fs');
     return items;
   });
 
-  results.push(...updates);
+  examData.updates = updates;
 
   await browser.close();
 
-  fs.writeFileSync('data/exams.json', JSON.stringify(results, null, 2));
+  fs.writeFileSync('data/exams.json', JSON.stringify([examData], null, 2));
 })();
