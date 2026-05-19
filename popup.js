@@ -43,8 +43,5 @@ function showResultPopup() {
   };
 }
 
-// Show popup every 5 minutes
-setInterval(showResultPopup, 5 * 60 * 1000);
-
-// Show immediately on load
+// Show only once on initial page load
 window.onload = showResultPopup;

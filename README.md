@@ -1,14 +1,14 @@
 # Easy Application
 
 ## Overview
-Easy Application is a platform designed to automate and simplify access to job and exam notifications. The goal is to build a system similar to FreeJobAlert, but fully automated.
+Easy Application is a platform designed to simplify access to job and exam notifications. The goal is to build a system similar to FreeJobAlert with easy-to-maintain updates.
 
 ## 📢 Latest Update
 - AP POLYCET Exam Date: **25 April 2026**
 
 ## Features (Planned)
-- Automated job & exam updates
-- Scraper-based data collection
+- Curated job & exam updates
+- Source-based data collection
 - Clean dashboard for users
 - Mobile-friendly UI
 - Fast search and filtering
@@ -33,7 +33,7 @@ Easy Application is a platform designed to automate and simplify access to job a
 3. Run the development server
 
 ## Vision
-To build a fully automated job and exam alert engine that requires zero manual updates.
+To build a reliable job and exam alert platform with clear, user-friendly guidance.
 
 ## Status
 🚧 Under development

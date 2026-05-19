@@ -465,23 +465,6 @@
                 countElement.textContent = count.toLocaleString();
             });
 
-            setInterval(() => {
-                if (cards.length === 0) return;
-
-                const randomCardIndex = Math.floor(Math.random() * cards.length);
-                const card = cards[randomCardIndex];
-                const titleElement = card.querySelector('h3');
-                if (!titleElement) return;
-
-                const cardKey = 'visitor_count_' + titleElement.textContent.trim().replace(/\s+/g, '_').toLowerCase();
-                const countElement = card.querySelector('.visitor-count');
-                if (!countElement) return;
-
-                let count = parseInt(localStorage.getItem(cardKey) || '0', 10);
-                count += Math.floor(Math.random() * 3) + 1;
-                localStorage.setItem(cardKey, count);
-                countElement.textContent = count.toLocaleString();
-            }, 3000);
         });
     </script>
 </body>
