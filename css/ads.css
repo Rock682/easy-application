@@ -1,0 +1,131 @@
+/* Hidden until AdSense is enabled in ads-config.js */
+.ad-slot--pending {
+    display: none;
+}
+
+/* AdSense-friendly ad containers */
+.ad-slot {
+    margin: 1.5rem auto;
+    max-width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+.ad-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted, #94a3b8);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.ad-container {
+    min-height: 90px;
+    background: #f8fafc;
+    border: 1px dashed var(--border, #e2e8f0);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-slot--responsive .ad-container {
+    min-height: 100px;
+}
+
+.ad-slot--infeed {
+    margin: 2rem 0;
+    padding: 0.5rem 0;
+}
+
+.ad-slot ins.adsbygoogle {
+    display: block;
+    min-height: inherit;
+}
+
+/* Prevent ads from breaking layout before load */
+.ad-slot:empty .ad-container::after {
+    content: '';
+}
+
+/* Cookie consent (AdSense / GDPR friendly) */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 150;
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+.cookie-consent.is-visible {
+    display: block;
+}
+
+.cookie-consent-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cookie-consent p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    flex: 1;
+    min-width: 240px;
+}
+
+.cookie-consent a {
+    color: var(--accent-light, #14b8a6);
+}
+
+.cookie-consent-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.cookie-btn {
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    min-height: 44px;
+}
+
+.cookie-btn-accept {
+    background: var(--accent, #0d9488);
+    color: white;
+}
+
+.cookie-btn-decline {
+    background: transparent;
+    color: #94a3b8;
+    border: 1px solid #334155;
+}
+
+@media (max-width: 768px) {
+    .ad-slot {
+        margin: 1.25rem 0;
+    }
+
+    .cookie-consent-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,95 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
   <url>
     <loc>https://easyapplications.in/</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Main Exam Pages -->
-  <url>
-    <loc>https://easyapplications.in/ap-eapcet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/ap-ecet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/ap-edcet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/ap-icet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/ap-lawcet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/ap-pecet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/ap-pgcet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/ap-pgecet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/ap-polycet-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://easyapplications.in/apset-2026/</loc>
-    <lastmod>2026-02-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <!-- Other Pages -->
   <url>
     <loc>https://easyapplications.in/about/</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://easyapplications.in/contact/</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://easyapplications.in/search/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-state-jobs/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/central-govt-jobs/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/entrance-exams/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/ibps-po-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/rrb-group-d-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/rrb-ntpc-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/ssc-cgl-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/ssc-chsl-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/upsc-civil-services/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/ap-dsc-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/ap-grama-sachivalayam/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/ap-police-constable/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/jobs/appsc-group-1-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-eapcet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-ecet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-edcet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-icet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-lawcet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-pecet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-pgcet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-pgecet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/ap-polycet-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://easyapplications.in/apset-2026/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://easyapplications.in/privacy/</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://easyapplications.in/sitemap.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://easyapplications.in/terms/</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

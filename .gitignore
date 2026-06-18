@@ -1,0 +1,6 @@
+node_modules/
+scripts/.exam-backup/
+.DS_Store
+Thumbs.db
+*.log
+.env

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@source "../*.html";
+@source "../**/*.html";
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --color-primary-bg: #f0f4f8;
+  --color-secondary-bg: #e9ecef;
+  --color-text-dark: #1e293b;
+  --color-text-light: #64748b;
+  --color-accent-teal: #0d9488;
+  --color-accent-teal-hover: #0f766e;
+  --color-border-light: #e2e8f0;
+  --color-primary-blue: #0f4c81;
+}
+
+@keyframes ticker-slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
